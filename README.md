@@ -16,27 +16,33 @@ Welcome to the admin side of the e-commerce shop, where the admin can manage pro
 - **Simplified Operations**: With a user-friendly interface, the admin can make updates to the shop in minutes without technical expertise.
 - **Efficient Discount System**: The system calculates discounts automatically, ensuring accurate price management every time.
 - **Aesthetically Pleasing**: The interface uses clean design principles to keep it modern and professional. Simple yet effective, it keeps your focus on the important tasks.
+## Product Example 🛒
 
+### 1. Example Empty Form:
+Below is a preview of the empty form that an admin would fill out to add a new product.
 
-## Product Preview Example 🖼️
-![Product Example](assets/images/example empty.png)
+![Example Empty Form](asset%20creation%20tool/Assets/example-empty-form.png)
 
-![Product Example](assets/images/sucsesfully added.png)
+### 2. Product Successfully Added:
+Once the admin fills out the form and submits, the product is successfully added to the database.
 
+![Product Successfully Added](asset%20creation%20tool/Assets/successfully-added.png)
 
-## Dynamic Theme Change Feature 🌈
+## Theme Changing Feature 🌈
+
 To demonstrate my UI skills, I have added a dynamic theme-changing button that allows users to toggle between light and dark themes. This feature enhances user experience by offering a customizable interface, catering to different user preferences.
-
-![Product Example](assets/images/Theam options.png)
-
 
 ### How It Works:
 - **Button Functionality**: A button is placed on the UI that switches between light and dark themes with a smooth transition. This allows users to choose their preferred theme for a more comfortable browsing experience.
 - **CSS Transitions**: Smooth transitions are applied when switching between themes, providing a polished, professional look.
 - **User-Friendly Design**: The button is easily accessible and visually appealing, encouraging users to interact with the interface.
+
 Here’s a video demo of the theme switcher in action! 🎥
 
-![Theme Switcher Demo](assets/videos/theme-button-demo.mp4)
+<video width="600" controls>
+  <source src="asset%20creation%20tool/Assets/theme-button-demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## Technologies Used ⚙️
 - **HTML**: The backbone of the website structure.
