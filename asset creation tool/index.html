@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Ecommerce Shop</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="apple.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add a New Product</h1>
+        <form id="productForm">
+            <label for="name">Product Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="price">Price:</label>
+            <input type="number" id="price" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" required></textarea>
+
+            <div class="upload-area" id="uploadArea">
+                <p>Upload from this device?</p>
+                <input type="file" id="picture" accept="image/*" hidden>
+                <div class="drop-area" id="dropArea">
+                    Drag & Drop your image here
+                </div>
+            </div>
+
+            <label for="whatInTheBox">What's in the Box:</label>
+            <textarea id="whatInTheBox" required></textarea>
+
+            <label for="discount">Discount in % (optional):</label>
+            <input type="number" id="discount">
+
+            <button type="submit">Add Product</button>
+        </form>
+
+        <h2>Product List</h2>
+        <div id="productList"></div>
+
+
+
+        
+
+        <button id="change-theme-button">Change Theme</button>
+
+        <div id="theme-selector" style="display: none;">
+            <h2>Select a Theme</h2>
+            <ul>
+             
+                <li><button class="theme-option" data-theme="apple.css">Apple'ish</button></li>
+                <li><button class="theme-option" data-theme="light.css">Light</button></li>
+                <li><button class="theme-option" data-theme="google.css">Google'ish</button></li>
+                <li><button class="theme-option" data-theme="dark.css">Dark</button></li>
+                <li><button class="theme-option" data-theme="boring_green.css">Boring Green</button></li>
+                <li><button class="theme-option" data-theme="lux.css">Lux</button></li>
+                <!-- Add more themes as needed -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <p>&copy; 2025 Ecommerce Shop - Admin Dashboard</p>
+</footer>
+</html>

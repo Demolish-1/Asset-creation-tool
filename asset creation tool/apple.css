@@ -1,0 +1,190 @@
+/* dark.css */
+body {
+    background-color: #000000; /* Pure black for a sleek look */
+    color: #ffffff; /* White text for high contrast */
+    font-family: 'Helvetica Neue', sans-serif; /* Apple’s signature font */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #1c1c1e; /* Dark gray for a subtle background */
+    border-radius: 12px; /* Slightly larger border radius for a softer look */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6); /* Softer shadow for depth */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1, h2 {
+    color: #ffffff;
+    text-align: center;
+    animation: slideIn 0.5s ease-in-out;
+    font-weight: 300; /* Lighter font weight for elegance */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    padding: 12px;
+    border: 1px solid #333;
+    border-radius: 8px; /* More rounded corners */
+    background-color: #2c2c2e; /* Slightly lighter gray */
+    color: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #007aff; /* iOS blue */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 122, 255, 0.5); /* iOS blue shadow */
+}
+
+textarea {
+    resize: vertical;
+}
+
+.upload-area {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.drop-area {
+    border: 2px dashed #007aff; /* iOS blue */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #2c2c2e;
+    color: #007aff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.drop-area:hover {
+    background-color: #3a3a3c; /* Slightly lighter on hover */
+    transform: scale(1.02);
+}
+
+button {
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px; /* More rounded corners */
+    background-color: #007aff; /* iOS blue */
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #0051a8; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+#productList {
+    margin-top: 20px;
+    background-color: #2c2c2e;
+    padding: 10px;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-in-out;
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 15px; /* Space between items */
+}
+
+.product-item {
+    background-color: #1c1c1e; /* Card background */
+    border-radius: 12px; /* Rounded corners */
+    padding: 15px; /* Inner padding */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4); /* Softer shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition for hover effect */
+}
+.product-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+.product-item img {
+    width: 100%; /* Full width of the card */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+.product-item h3 {
+    margin: 10px 0 5px; /* Spacing for the title */
+    font-size: 1.2em; /* Slightly larger font size */
+    font-weight: 400; /* Lighter font weight for elegance */
+}
+
+.product-item p {
+    margin: 5px 0; /* Spacing for paragraphs */
+}
+
+#change-theme-button {
+    margin-top: 20px;
+    background-color: #007aff; /* iOS blue */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px; /* More rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#change-theme-button:hover {
+    background-color: #0051a8; /* Darker blue on hover */
+    transform: translateY(-2px);
+}
+
+#theme-selector {
+    margin-top: 20px;
+    background-color: #1c1c1e; /* Dark gray for the theme selector */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+}
+
+.theme-option {
+    background-color: transparent;
+    color: #007aff; /* "iOS" blue */
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.theme-option:hover {
+    color: #779ac0; /* light blue on hover */
+    transform: scale(1.05);
+}
